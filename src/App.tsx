@@ -7,6 +7,7 @@ import { SignupPage } from '@/pages/SignupPage'
 import { OtpPage } from '@/pages/OtpPage'
 import { BooksPage } from '@/pages/BooksPage'
 import { BookDetailPage } from '@/pages/BookDetailPage'
+import { BookReaderPage } from '@/pages/BookReaderPage'
 import { AuthorPage } from '@/pages/AuthorPage'
 import { EventsPage } from '@/pages/EventsPage'
 import { EventDetailPage } from '@/pages/EventDetailPage'
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/books" element={<BooksPage />} />
           <Route path="/books/:id" element={<BookDetailPage />} />
+          <Route path="/books/:id/read" element={<BookReaderPage />} />
           <Route path="/author/:id" element={<AuthorPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/events/:id" element={<EventDetailPage />} />
